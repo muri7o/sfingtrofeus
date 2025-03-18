@@ -31,133 +31,68 @@
     </header>
 
     <section class="produtos">
-        <h1 class="titulo-produtos">Confira nossos produtos</h1>
-        <p class="texto-inicial">Na Sfing Troféus, criamos troféus personalizados com qualidade e design únicos para tornar cada conquista ainda mais especial. Seja para competições esportivas, eventos corporativos ou homenagens, oferecemos peças exclusivas que refletem o reconhecimento e a excelência. Confira nossa coleção e encontre o troféu ideal para sua premiação!</p>
-        <div class="container-produtos">
-            <div class="produto">
-                <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
+        <div class="container-titulo">
+            <h1 class="titulo-produtos">Confira nossos produtos</h1>
+            <a class="link-catalogo" href="../downloads/Catálogo Sfing Troféus 2025.pdf" download>
+                Baixe nosso catálogo clicando aqui!
+            </a>
+    
+            <div class="filters">
+                <div class="filter-group borda-direita">
+                    <h3>Esporte</h3>
+                    <label><input type="checkbox" id="esporte-volei"> Vôlei</label>
+                    <label><input type="checkbox" id="esporte-futebol"> Futebol</label>
+                    <label><input type="checkbox" id="esporte-tenis"> Tênis</label>
                 </div>
-                <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
-                    </div>
+                <div class="filter-group">
+                    <h3>Tipo do Produto</h3>
+                    <label><input type="checkbox" id="tipo-medalha"> Medalha</label>
+                    <label><input type="checkbox" id="tipo-trofeu"> Troféu</label>
                 </div>
-            </div>
-        
-            <div class="produto">
-                <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
-                </div>
-                <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="produto">
-                <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
-                </div>
-                <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
-                    </div>
+                <div class="filter-group borda-esquerda">
+                    <h3>Modelo à Pronta Entrega</h3>
+                    <label><input type="checkbox" id="pronta-entrega"> Somente à Pronta Entrega</label>
                 </div>
             </div>
         </div>
-
+    
         <div class="container-produtos">
-            <div class="produto">
+            <div class="produto" data-esporte="volei" data-tipo="medalha" data-pronta-entrega="true">
                 <div class="produto-imagem-container">
                     <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
+                    <img src="../public/img/teste.png" alt="Medalha de Vôlei" class="img-produto">
                 </div>
                 <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Medalha de Vôlei</h3>
+                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="botao-container">
                         <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
                     </div>
                 </div>
             </div>
-        
-            <div class="produto">
+    
+            <div class="produto" data-esporte="futebol" data-tipo="trofeu" data-pronta-entrega="false">
                 <div class="produto-imagem-container">
                     <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
+                    <img src="../public/img/teste.png" alt="Troféu de Futebol" class="img-produto">
                 </div>
                 <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Troféu de Futebol</h3>
+                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="botao-container">
                         <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
                     </div>
                 </div>
             </div>
-        
-            <div class="produto">
+    
+            <div class="produto" data-esporte="tenis" data-tipo="medalha" data-pronta-entrega="true">
                 <div class="produto-imagem-container">
                     <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
+                    <img src="../public/img/teste.png" alt="Medalha de Tênis" class="img-produto">
                 </div>
                 <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-produtos">
-            <div class="produto">
-                <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
-                </div>
-                <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="produto">
-                <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
-                </div>
-                <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="produto">
-                <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Foto do produto" class="img-produto">
-                </div>
-                <div class="produto-conteudo">
-                    <h3>Nome do produto</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Medalha de Tênis</h3>
+                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="botao-container">
                         <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
                     </div>
@@ -181,12 +116,12 @@
         </div>
 
             <div class="creditos-murilo">
-            <p class="desenvolvidos-por">Desenvolvido por <a href="https://meu-portfolio-kappa-eight.vercel.app/" target="_blank">Murilo Vasconcelos de Oliveira.</a></p>
+            <p class="desenvolvidos-por">Desenvolvido por Murilo Vasconcelos de Oliveira.</p>
             </div>
 
             <div class="social-links">
-            <a href="https://wa.me/51997851411" target="_blank" title="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
+            <a href="https://meu-portfolio-kappa-eight.vercel.app/" target="_blank" title="Portfólio">
+                <i class="fa-solid fa-user"></i>
             </a>
             <a href="https://www.linkedin.com/in/murilo-vasconcelos-de-oliveira-5512b1265/" target="_blank" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
@@ -199,5 +134,6 @@
 
     </footer>
 
+    <script src="../filter.js"></script>
 </body>
 </html>

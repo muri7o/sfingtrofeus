@@ -670,6 +670,14 @@ footer a:active{
     justify-content: center;
 }
 
+.container-titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-primaria);
+    
+}
+
 .titulo-produtos{
     display: flex;
     justify-content: center;
@@ -677,6 +685,44 @@ footer a:active{
     color: var(--cor-principal);
     font-family: var(--font-primaria);
     font-size: 60px;
+}
+
+.link-catalogo {
+    color: var(--cor-principal);
+    font-family: var(--font-textos);
+    font-size: 1.2rem;
+    font-weight: 600;   
+    display: table;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-catalogo:hover{
+    color: #9c3b0e;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 20px;
+}
+
+.filter-group{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.filter-group h3{
+    text-align: center;
+}
+
+.borda-direita{
+    border-right: 2px solid var(--cor-principal);
+}
+
+.borda-esquerda{
+    border-left: 2px solid var(--cor-principal);
 }
 
 .texto-inicial{
