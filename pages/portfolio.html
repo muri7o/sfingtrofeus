@@ -33,22 +33,35 @@
     <section class="produtos">
         <div class="container-titulo">
             <h1 class="titulo-produtos">Confira nossos produtos</h1>
-            <a class="link-catalogo" href="../downloads/Catálogo Sfing Troféus 2025.pdf" download>
-                Baixe nosso catálogo clicando aqui!
+            <a class="link-catalogo" href="../downloads/Catálogo Sfing Troféus 2025.pdf" target="_blank">
+                Acesse nosso catálogo clicando aqui!
             </a>
     
             <div class="filters">
+                <!-- Filtro de Categoria -->
                 <div class="filter-group borda-direita">
-                    <h3>Esporte</h3>
-                    <label><input type="checkbox" id="esporte-volei"> Vôlei</label>
-                    <label><input type="checkbox" id="esporte-futebol"> Futebol</label>
-                    <label><input type="checkbox" id="esporte-tenis"> Tênis</label>
+                    <h3>Categoria</h3>
+                    <label><input type="checkbox" id="categoria-esporte" class="categoria-filter"> Esporte</label>
+                    <div class="sub-filters" id="sub-filters-esporte" style="display: none;">
+                        <label><input type="checkbox" id="esporte-beach-tenis"> Beach Tênis</label>
+                        <label><input type="checkbox" id="esporte-futebol"> Futebol</label>
+                        <label><input type="checkbox" id="esporte-futevolei"> Futevôlei</label>
+                        <label><input type="checkbox" id="esporte-padel"> Padel</label>
+                        <label><input type="checkbox" id="esporte-tenis"> Tênis</label>
+                        <label><input type="checkbox" id="esporte-volei"> Vôlei</label>
+                    </div>
+                    <label><input type="checkbox" id="categoria-empresarial" class="categoria-filter"> Empresarial</label>
+                    <label><input type="checkbox" id="categoria-tradicionalista" class="categoria-filter"> Tradicionalista</label>
                 </div>
+    
+                <!-- Filtro de Tipo de Produto -->
                 <div class="filter-group">
                     <h3>Tipo do Produto</h3>
                     <label><input type="checkbox" id="tipo-medalha"> Medalha</label>
                     <label><input type="checkbox" id="tipo-trofeu"> Troféu</label>
                 </div>
+    
+                <!-- Filtro de Modelo à Pronta Entrega -->
                 <div class="filter-group borda-esquerda">
                     <h3>Modelo à Pronta Entrega</h3>
                     <label><input type="checkbox" id="pronta-entrega"> Somente à Pronta Entrega</label>
@@ -56,50 +69,382 @@
             </div>
         </div>
     
+        <!-- Cards de Produtos -->
         <div class="container-produtos">
-            <div class="produto" data-esporte="volei" data-tipo="medalha" data-pronta-entrega="true">
+            <!-- ESPORTES - BEACH TÊNIS -->
+            <div class="produto" data-categoria="esporte" data-esporte="beach-tenis" data-tipo="medalha" data-pronta-entrega="true">
                 <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Medalha de Vôlei" class="img-produto">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha de Beach Tênis" class="img-produto">
                 </div>
                 <div class="produto-conteudo">
-                    <h3>Medalha de Vôlei</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Medalha de Beach Tênis</h3>
+                    <p class="descricao-produto">Medalha personalizada para premiações de Beach Tênis, acabamento dourado e detalhes em alto relevo.</p>
                     <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha de Beach Tênis.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
                     </div>
                 </div>
             </div>
-    
-            <div class="produto" data-esporte="futebol" data-tipo="trofeu" data-pronta-entrega="false">
+        
+            <div class="produto" data-categoria="esporte" data-esporte="beach-tenis" data-tipo="trofeu" data-pronta-entrega="false">
                 <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Troféu de Futebol" class="img-produto">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu de Beach Tênis" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu de Beach Tênis</h3>
+                    <p class="descricao-produto">Troféu exclusivo para campeonatos de Beach Tênis, base em acrílico com detalhes personalizados.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu de Beach Tênis.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- ESPORTES - FUTEBOL -->
+            <div class="produto" data-categoria="esporte" data-esporte="futebol" data-tipo="medalha" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha de Futebol" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Medalha de Futebol</h3>
+                    <p class="descricao-produto">Medalha temática de futebol, disponível em ouro, prata e bronze, com fita personalizada.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha de Futebol.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="esporte" data-esporte="futebol" data-tipo="trofeu" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu de Futebol" class="img-produto">
                 </div>
                 <div class="produto-conteudo">
                     <h3>Troféu de Futebol</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="descricao-produto">Troféu clássico para campeonatos de futebol, disponível em diferentes tamanhos e acabamentos.</p>
                     <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu de Futebol.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
                     </div>
                 </div>
             </div>
-    
-            <div class="produto" data-esporte="tenis" data-tipo="medalha" data-pronta-entrega="true">
+        
+            <!-- ESPORTES - FUTEVÔLEI -->
+            <div class="produto" data-categoria="esporte" data-esporte="futevolei" data-tipo="medalha" data-pronta-entrega="false">
                 <div class="produto-imagem-container">
-                    <div class="produto-imagem-overlay"></div>
-                    <img src="../public/img/teste.png" alt="Medalha de Tênis" class="img-produto">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha de Futevôlei" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Medalha de Futevôlei</h3>
+                    <p class="descricao-produto">Medalha em metal com design exclusivo para torneios de futevôlei, gravação personalizada.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha de Futevôlei.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="esporte" data-esporte="futevolei" data-tipo="trofeu" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu de Futevôlei" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu de Futevôlei</h3>
+                    <p class="descricao-produto">Troféu moderno para campeonatos de futevôlei, com detalhes em resina e base em madeira nobre.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu de Futevôlei.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- ESPORTES - PADEL -->
+            <div class="produto" data-categoria="esporte" data-esporte="padel" data-tipo="medalha" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha de Padel" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Medalha de Padel</h3>
+                    <p class="descricao-produto">Medalha comemorativa para torneios de padel, design exclusivo com raquete em destaque.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha de Padel.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="esporte" data-esporte="padel" data-tipo="trofeu" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu de Padel" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu de Padel</h3>
+                    <p class="descricao-produto">Troféu premium para competições de padel, confeccionado em metal com detalhes em acrílico.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu de Padel.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- ESPORTES - TÊNIS -->
+            <div class="produto" data-categoria="esporte" data-esporte="tenis" data-tipo="medalha" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha de Tênis" class="img-produto">
                 </div>
                 <div class="produto-conteudo">
                     <h3>Medalha de Tênis</h3>
-                    <p class="descricao-produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="descricao-produto">Medalha sofisticada para torneios de tênis, disponível em diversos acabamentos metálicos.</p>
                     <div class="botao-container">
-                        <button class="botao-orcamento"><i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!</button>
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha de Tênis.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="esporte" data-esporte="tenis" data-tipo="trofeu" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu de Tênis" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu de Tênis</h3>
+                    <p class="descricao-produto">Troféu elegante para competições de tênis, inspirado nos grandes torneios internacionais.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu de Tênis.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- ESPORTES - VÔLEI -->
+            <div class="produto" data-categoria="esporte" data-esporte="volei" data-tipo="medalha" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha de Vôlei" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Medalha de Vôlei</h3>
+                    <p class="descricao-produto">Medalha especial para campeonatos de vôlei, com design em 3D e gravação personalizada.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha de Vôlei.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="esporte" data-esporte="volei" data-tipo="trofeu" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu de Vôlei" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu de Vôlei</h3>
+                    <p class="descricao-produto">Troféu exclusivo para competições de vôlei, com bola em destaque e base personalizada.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu de Vôlei.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- EMPRESARIAL -->
+            <div class="produto" data-categoria="empresarial" data-tipo="medalha" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha Corporativa" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Medalha Corporativa</h3>
+                    <p class="descricao-produto">Medalha premium para reconhecimento de funcionários, com possibilidade de personalização com logo da empresa.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha Corporativa.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="empresarial" data-tipo="trofeu" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu Empresarial" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu Empresarial</h3>
+                    <p class="descricao-produto">Troféu executivo para premiações corporativas, em cristal com gravação a laser personalizada.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu Empresarial.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="empresarial" data-tipo="trofeu" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Placa Comemorativa" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Placa Comemorativa</h3>
+                    <p class="descricao-produto">Placa elegante para homenagens e reconhecimentos empresariais, disponível em metal, acrílico ou madeira nobre.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Placa Comemorativa.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="empresarial" data-tipo="medalha" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Pins Corporativos" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Pins Corporativos</h3>
+                    <p class="descricao-produto">Pins metálicos personalizados com a identidade visual da sua empresa, ideais para eventos e reconhecimentos.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Pins Corporativos.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- TRADICIONALISTA -->
+            <div class="produto" data-categoria="tradicionalista" data-tipo="medalha" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Medalha Tradicionalista" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Medalha Tradicionalista</h3>
+                    <p class="descricao-produto">Medalha temática para eventos tradicionalistas, com símbolos gaúchos em alto relevo e acabamento envelhecido.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Medalha Tradicionalista.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="tradicionalista" data-tipo="trofeu" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu Tradicionalista" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu Tradicionalista</h3>
+                    <p class="descricao-produto">Troféu exclusivo para rodeios e eventos culturais gaúchos, com elementos da tradição e acabamento rústico.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu Tradicionalista.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="tradicionalista" data-tipo="medalha" data-pronta-entrega="false">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Fivela Personalizada" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Fivela Personalizada</h3>
+                    <p class="descricao-produto">Fivela comemorativa para premiações em eventos campeiros, fabricada em metal com gravações personalizadas.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Fivela Personalizada.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="produto" data-categoria="tradicionalista" data-tipo="trofeu" data-pronta-entrega="true">
+                <div class="produto-imagem-container">
+                    <img src="../public/img/TROFEU-FOTO36.jpg" alt="Troféu Temático Gaúcho" class="img-produto">
+                </div>
+                <div class="produto-conteudo">
+                    <h3>Troféu Temático Gaúcho</h3>
+                    <p class="descricao-produto">Troféu artesanal com elementos da cultura gaúcha, ideal para premiações em competições tradicionalistas.</p>
+                    <div class="botao-container">
+                        <button 
+                            class="botao-orcamento" 
+                            onclick="window.open('https://wa.me/5551997851411?text=Olá! Gostaria de solicitar um orçamento para Troféu Temático Gaúcho.', '_blank')"
+                        >
+                            <i class="fa-brands fa-whatsapp"></i> Solicite um orçamento!
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <a href="#top" class="voltar-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
 
     <footer>
         <p class="direitos">© 2025 Sfing Troféus. Todos os direitos reservados.</p>
@@ -135,5 +480,6 @@
     </footer>
 
     <script src="../filter.js"></script>
+    <script src="../topbutton.js"></script>
 </body>
 </html>

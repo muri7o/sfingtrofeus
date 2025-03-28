@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
-<body>
+<body id="top">
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a href="index.html"><img src="public/img/pngsfing.png" alt="Sfing Trófeus" class="cabecalho__menu__logo"></a>
@@ -44,30 +44,28 @@
     </section>
 
     <section class="container-sec">
-        <h2 class="galeria-titulo">Celebre conquistas com estilo e exclusividade!</h2>
+        <h2 class="galeria-titulo">Quem celebra suas histórias com troféus?</h2>
         
         <div class="container-sec-content">
-            <a href="https://www.instagram.com/p/DB67HpRSyLz/?img_index=1" target="_blank" class="galeria-item">
-                <img src="public/img/teste2.png" alt="Imagem de pessoas com os trofeus" class="img-sec">
-                <div class="galeria-caption">
-                    <p>Voleibol de Base - Liga Gaúcha</p>
+        <div class="sec-content">
+            <img class="icone-sec" src="public/img/teste.png" alt="">
+            <h6 class="titulo-sec-content">Campeões do Esporte</h6>
+            <p class="texto-sec">Clubes, atletas, federações e escolas esportivas que transformam suor e dedicação em momentos de glória. Do futebol de campo ao esporte amador, cada conquista merece ser eternizada.</p>
                 </div>
-            </a>
-            
-            <a href="https://www.instagram.com/p/C1HVylbOmu6/" target="_blank" class="galeria-item">
-                <img src="public/img/teste3.png" alt="Imagem de pessoas com os trofeus" class="img-sec">
-                <div class="galeria-caption">
-                    <p>Grand Slam Paladino</p>
+
+        <div class="sec-content">
+            <img class="icone-sec" src="public/img/teste.png" alt="">
+            <h6 class="titulo-sec-content">Protagonistas Empresariais</h6>
+            <p class="texto-sec">Empresas que reconhecem o valor de seus talentos. Troféus para premiações corporativas, homenagens a funcionários e marcos institucionais que inspiram equipes inteiras.</p>
                 </div>
-            </a>
-            
-            <a href="https://www.instagram.com/p/DB67HpRSyLz/?utm_source=ig_web_copy_link" target="_blank" class="galeria-item">
-                <img src="public/img/teste4.png" alt="Imagem de pessoas com os trofeus" class="img-sec">
-                <div class="galeria-caption">
-                    <p>Voleibol de Base - Liga Gaúcha</p>
-                </div>
-            </a>
-        </div>
+
+                <div class="sec-content">
+                    <img class="icone-sec" src="public/img/teste.png" alt="">
+                    <h6 class="titulo-sec-content">Tradição Gaúcha</h6>
+                    <p class="texto-sec">CTGs, festivais tradicionalistas e eventos culturais que celebram a rica herança do Rio Grande do Sul. Troféus que contam histórias de garra, cultura e orgulho regional.</p>
+                        </div>
+                    </div>
+        
         
     </section>
     
@@ -117,6 +115,8 @@
                 </div>
             </div>
         </div>
+
+        
         
     </section>
 
@@ -126,20 +126,35 @@
         <div class="container-parceiros">
             <div class="marquee">
                 <ul class="marquee-content">
-                  <li><i class="fa-brands fa-apple"></i></li>
-                  <li><i class="fa-brands fa-google"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-paypal"></i></li>
-                  <li><i class="fa-brands fa-amazon"></i></li>
-                  <li><i class="fa-brands fa-spotify"></i></li>
-                  <li><i class="fa-brands fa-xbox"></i></li>
-                  <li><i class="fa-brands fa-steam"></i></li>
-                  <li><i class="fa-brands fa-waze"></i></li>
-                  <li><i class="fa-brands fa-cc-visa"></i></li>
-                  <li><i class="fa-brands fa-airbnb"></i></li>
-                  <li><i class="fa-brands fa-tiktok"></i></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
+                  <li><img src="public/img/teste.png" alt=""></li>
                 </ul>
               </div>
+        </div>
+    </section>
+
+    <section class="container-depoimentos">
+        <!-- Depoimentos -->
+        <div class="depoimentos mb-20">
+            <h3 class="titulo-depoimentos">O que nossos clientes dizem</h3>
+            <div class="depoimento">
+                <div class="depoimento-avatar">
+                    <img src="https://placedog.net/100/100" alt="Cliente João Silva">
+                </div>
+                    <div class="depoimento-texto-container">
+                <p class="depoimento-texto">"Os troféus da Sfing superaram todas as nossas expectativas. A qualidade e o acabamento são impecáveis!"</p>
+                <p class="depoimento-autor">João Silva</p>
+                <p class="depoimento-cargo">Clube Esportivo Nacional</p>
+                </div>
+                <button class="depoimento-nav depoimento-prev" onclick="prevDepoimento()">&#10094;</button>
+                <button class="depoimento-nav depoimento-next" onclick="nextDepoimento()">&#10095;</button>
+            </div>
         </div>
     </section>
 
@@ -153,6 +168,10 @@
             </div>
         </div>
     </section>
+
+    <a href="#top" class="voltar-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <footer>
         <p class="direitos">© 2025 Sfing Troféus. Todos os direitos reservados.</p>
@@ -190,6 +209,8 @@
 
 
     <script src="carousel.js"></script>
+    <script src="depoimentos.js"></script>
+    <script src="topbutton.js"></script>
 
 </body>
 </html>
