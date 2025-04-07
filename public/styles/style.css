@@ -86,21 +86,19 @@ a{
 }
 
 .cabecalho__menu__botao {
-    border: 2px solid var(--cor-terciaria);
-    background-color: var(--cor-terciaria);
+    border: 2px solid #25D366;
+    background-color: #25D366;
     border-radius: var(--radius);
     font-size: 22px;
     font-family: var(--font-primaria);
     font-weight: bold;
-    color: var(--cor-principal);
+    color: #ffffff;
     transition: 0.3s ease-in-out;
     padding: 5px 15px;
     cursor: pointer;
 }
 
 .cabecalho__menu__botao:hover {
-    background-color: transparent;
-    color: var(--cor-terciaria);
     transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
 }
@@ -128,16 +126,16 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 8rem;
+    gap: 10rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem 2.4rem;
+    padding: 5rem 0rem;
 }
 
 .container-texto {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
 .titulo-sfing {
@@ -155,14 +153,14 @@ a{
 .texto-inicial-main {
     color: var(--cor-principal);
     font-family: var(--font-textos);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .primary-button, .secondary-button {
@@ -245,7 +243,7 @@ a{
 .titulo-sec-content{
     color: var(--cor-terciaria);
     font-family: var(--font-textos);
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .texto-sec{
@@ -718,10 +716,20 @@ a{
 .titulo-produtos {
     color: var(--cor-principal);
     text-align: center;
-    margin-bottom: 15px;
+    padding: 0 0 1rem 0;
     font-size: 3rem;
     font-weight: 800;
     font-family: var(--font-textos);
+}
+
+.linha-titulo{
+    display: block;
+    width: 40%; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+    border: none;
+    height: 2px; /* Espessura da linha */
+    background-color: var(--cor-principal);
 }
 
 .botoes-titulo{
@@ -869,7 +877,7 @@ a{
 
 .produto-imagem-container {
     width: 100%;
-    height: 200px; /* Altura fixa para todas as imagens */
+    height: 200px;
     overflow: hidden;
 }
 
@@ -883,29 +891,22 @@ a{
 .produto-conteudo {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    height: 280px; /* Altura fixa mais generosa */
+    padding: 1rem;
+    height: 280px; 
 }
 
 .produto h3 {
+    align-items: center;
     color: var(--cor-terciaria);
     font-size: 20px;
-    margin: 0 0 1rem 0; /* Margin apenas abaixo */
     min-height: 24px; /* Altura mínima para o título */
 }
 
 .descricao-produto {
     color: var(--cor-terciaria);
     font-size: 16px;
-    line-height: 1.4;
-    margin: 0 0 auto 0; /* Empurra o botão para baixo */
-    /* Altura fixa com limite de linhas */
-    height: 112px; /* Exatamente 5 linhas com line-height de 1.4 (16px * 1.4 * 5) */
+    padding-top: 1rem;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5; /* Limita a 5 linhas */
-    line-clamp: 5; /* Limita a 5 linhas */
-    -webkit-box-orient: vertical;
 }
 
 .botao-container {
@@ -950,7 +951,8 @@ a{
 
 .sobre-paragrafo h3{
     color: var(--cor-principal);
-    font-family: var(--font-primaria);
+    font-family: var(--font-textos);
+    font-weight: 800;
     font-size: 30px;
     padding: 0 4rem;
 }
@@ -1577,4 +1579,3 @@ footer a:active{
         font-size: 12px;
     }
 }
-
