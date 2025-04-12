@@ -1,22 +1,22 @@
 // Dados dos depoimentos
 const depoimentos = [
     {
-        nome: "João Silva",
-        cargo: "Clube Esportivo Nacional",
-        texto: "Os troféus da Sfing superaram todas as nossas expectativas. A qualidade e o acabamento são impecáveis!",
-        imagem: "https://placedog.net/100/100"
+        nome: "Rubia Capretti",
+        cargo: "------------",
+        texto: "Sempre fui muito bem atendida.  Desde a captação a entrega. Não exito em indicar a empresa.",
+        imagem: "../public/img/iconpadrao.png"
     },
     {
-        nome: "Maria Oliveira",
-        cargo: "Empresa XYZ",
-        texto: "Nossas premiações corporativas ganharam um novo nível com os produtos personalizados da Sfing.",
-        imagem: "https://placedog.net/101/100"
+        nome: "Renato Neves",
+        cargo: "TRI SPORTS",
+        texto: "A experiência com a Sfing Troféus foi EXCELENTE. Já fiz premiações de 7 eventos diferentes com a empresa e em todas as vezes fui prontamente atendido, recebi várias dicas legais para a premiação, os troféus e medalhas foram entregues antes do tempo estimado e com uma qualidade altíssima. Indico muito essa empresa para outros lugares e hoje é a número 1 pra mim quando penso em solicitar premiações. Parabéns pelo trabalho e que sigamos nessa parceria muito legal que construímos.",
+        imagem: "../public/img/trisports.jpg"
     },
     {
-        nome: "Carlos Santos",
-        cargo: "Federação Estadual de Vôlei",
-        texto: "Trabalhamos com a Sfing há 5 anos e a qualidade e pontualidade sempre foram excepcionais.",
-        imagem: "https://placedog.net/102/100"
+        nome: "Dioneia",
+        cargo: "Fênix Torneios",
+        texto: "Passando aqui para falar que mais ou menos a 1 ano venho trabalhando com a Sfing através de meus torneios e desde então fiquei fixa com essa empresa. Os designers dos troféus e medalhas são impecáveis, além disso os preços são bem em conta e um excelente atendimento desde a encomenda até a entrega. Só tenho a agradecer pela ótima atenção que recebo.",
+        imagem: "../public/img/fenixtorneios.jpg"
     }
 ];
 
