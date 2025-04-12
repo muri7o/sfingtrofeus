@@ -17,6 +17,12 @@ const depoimentos = [
         cargo: "Fênix Torneios",
         texto: "Passando aqui para falar que mais ou menos a 1 ano venho trabalhando com a Sfing através de meus torneios e desde então fiquei fixa com essa empresa. Os designers dos troféus e medalhas são impecáveis, além disso os preços são bem em conta e um excelente atendimento desde a encomenda até a entrega. Só tenho a agradecer pela ótima atenção que recebo.",
         imagem: "../public/img/fenixtorneios.jpg"
+    },
+    {
+        nome: "Marco",
+        cargo: "Integração Cruzaltense",
+        texto: "Desde 2024, quando o Integração Cruzaltense realizou seu primeiro evento esportivo, começamos a trilhar um caminho cheio de desafios, conquistas e, principalmente, boas parcerias, e foi exatamente nessa trajetória que conhecemos a Sfing. Na busca por uma empresa de confiança no ramo de premiações, encontramos na Sfing muito mais que um fornecedor: encontramos uma equipe parceira, que nos atendeu com atenção, agilidade e excelência desde o primeiro contato. A cada novo torneio, a Sfig sempre esteve ao nosso lado, sempre pronta para esclarecer dúvidas, sugerir as melhores opções e garantir que cada troféu refletisse a essência do nosso grupo e das nossas competições. É uma empresa acessível, comprometida e que realmente entende a importância dos detalhes em cada entrega. Agradecemos imensamente por essa parceria de confiança e recomendamos de olhos fechados a Sfing para quem busca qualidade e dedicação no mundo das premiações esportivas.",
+        imagem: "../public/img/integracaocruzaltense.jpg"
     }
 ];
 
