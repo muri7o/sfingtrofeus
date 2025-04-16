@@ -396,7 +396,7 @@ a{
     overflow: hidden; /* Importante para conter a imagem durante o zoom */
 }
 
-.bege{
+.produto-imagem-container-bege{
     background-color: var(--cor-terciaria);
 }
 
