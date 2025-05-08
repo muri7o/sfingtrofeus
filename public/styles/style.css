@@ -133,7 +133,7 @@ a{
     gap: 8rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem 0rem;
+    padding: 5rem 1rem;
 }
 
 .container-texto {
@@ -1010,6 +1010,11 @@ a{
 .img-sobre{
     width: 500px;
     height: auto;
+}
+
+.sobre-antiga{
+    border-radius: 5px;
+    border: var(--cor-principal) 3px solid;
 }
 
 
