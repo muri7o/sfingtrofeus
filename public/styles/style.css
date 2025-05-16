@@ -381,6 +381,9 @@ a{
     box-shadow: var(--shadow-md);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    /* Adicionando altura mínima para garantir consistência */
+    min-height: 580px;
+    position: relative; /* Importante para o posicionamento do botão */
 }
 
 .produto:hover {
@@ -391,9 +394,10 @@ a{
 .produto-imagem-container {
     position: relative;
     width: 100%;
-    height: 250px;
+    /* Reduzido altura da imagem para dar mais espaço ao conteúdo */
+    height: 200px;
     line-height: 0;
-    overflow: hidden; /* Importante para conter a imagem durante o zoom */
+    overflow: hidden;
 }
 
 .produto-imagem-container-bege{
@@ -415,11 +419,11 @@ a{
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease; /* Transição específica para a imagem */
+    transition: transform 0.5s ease;
 }
 
 .produto:hover .img-produto {
-    transform: scale(1.1); /* Aumentado para ser mais perceptível */
+    transform: scale(1.1);
 }
 
 .produto-conteudo {
@@ -427,6 +431,8 @@ a{
     flex-direction: column;
     flex-grow: 1;
     padding: 1rem;
+    /* Adicionando padding-bottom para garantir espaço para o botão */
+    padding-bottom: 70px;
 }
 
 .produto h3 {
@@ -434,7 +440,7 @@ a{
     font-family: var(--font-textos);
     font-size: 1.5rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem; /* Reduzido um pouco */
     border-bottom: var(--cor-terciaria);
     position: relative;
 }
@@ -442,14 +448,22 @@ a{
 .descricao-produto {
     color: var(--cor-sextanaria);
     font-family: var(--font-textos);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Reduzido um pouco */
     flex-grow: 1;
-    line-height: 1.5;
+    /* Otimizado para caber mais conteúdo */
+    line-height: 1.4;
+    font-size: 0.95rem;
 }
 
 .botao-container {
     display: flex;
     justify-content: center;
+    /* Posicionamento absoluto para garantir consistência */
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    width: calc(100% - 2rem);
 }
 
 .botao-orcamento {
@@ -476,6 +490,19 @@ a{
 
 .botao-orcamento:active {
     transform: translateY(0);
+}
+
+/* Adicione para garantir que linhas com texto longo quebrem corretamente */
+.descricao-produto strong {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Para garantir que a lista de esportes quebre corretamente */
+.descricao-produto br {
+    display: block;
+    content: "";
+    margin-top: 0.3rem;
 }
 
 .linha-separadora{
@@ -961,61 +988,173 @@ a{
 
 /* SOBRE NOS */
 
-.sobre-nos{
-    padding: 0;
+/* Estilo principal para a seção Sobre nós */
+.sobre-nos {
+    padding: 2rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.sobre-paragrafo{
+/* Container para os parágrafos alternados */
+.sobre-paragrafo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 4rem;
+    align-items: stretch;
+    padding: 2rem 4rem;
 }
 
-.sobre-paragrafo h3{
+/* Estilo para cada container com fundo colorido */
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c17f45;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover nos containers */
+.sobre-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para os títulos */
+.titulo-texto-sobre h3 {
     color: var(--cor-principal);
     font-family: var(--font-textos);
     font-weight: 800;
-    font-size: 30px;
-    padding: 0 4rem 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
-.sobre-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #c17f45;
-    padding: 2rem;
-    border-radius: 15px;
-}
-
-.titulo-texto-sobre{
+/* Container para o texto e título */
+.titulo-texto-sobre {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding-right: 2rem;
 }
 
-.texto-sobrenos{
+/* Estilo para os textos */
+.texto-sobrenos {
     font-family: var(--font-textos);
     color: var(--cor-principal);
-    font-size: 20px;
+    font-size: 1.125rem;
     font-weight: 500;
-    padding: 0 4rem;
+    line-height: 1.6;
 }
 
-.texto-sobrenos p{
-    font-family: var(--font-textos);
-}
-
-.img-sobre{
-    width: 500px;
+/* Estilo para as imagens */
+.img-sobre {
+    width: 450px;
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.sobre-antiga{
-    border-radius: 5px;
+/* Efeito hover nas imagens */
+.img-sobre:hover {
+    transform: scale(1.03);
+}
+
+/* Estilo específico para a imagem antiga */
+.sobre-antiga {
+    border-radius: 10px;
     border: var(--cor-principal) 3px solid;
 }
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .img-sobre {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .titulo-texto-sobre {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .titulo-texto-sobre h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .img-sobre {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 1rem;
+    }
+    
+    /* Inverte a ordem para manter a alternância visual */
+    .sobre-container:nth-child(even) .titulo-texto-sobre {
+        order: 2;
+    }
+    
+    .sobre-container:nth-child(even) .img-sobre {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-paragrafo {
+        padding: 1rem;
+    }
+    
+    .titulo-texto-sobre h3 {
+        font-size: 1.5rem;
+    }
+    
+    .texto-sobrenos {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .sobre-paragrafo {
+        padding: 0.5rem;
+    }
+    
+    .sobre-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Animação de fade-in para os elementos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sobre-container {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Adiciona delay para animação sequencial */
+.sobre-paragrafo:nth-child(1) .sobre-container { animation-delay: 0.1s; }
+.sobre-paragrafo:nth-child(2) .sobre-container { animation-delay: 0.2s; }
+.sobre-paragrafo:nth-child(3) .sobre-container { animation-delay: 0.3s; }
+.sobre-paragrafo:nth-child(4) .sobre-container { animation-delay: 0.4s; }
+.sobre-paragrafo:nth-child(5) .sobre-container { animation-delay: 0.5s; }
+.sobre-paragrafo:nth-child(6) .sobre-container { animation-delay: 0.6s; }
 
 
 
@@ -1443,9 +1582,9 @@ footer a:active{
     }
 
 }
-@media(max-width: 1226px){
+@media(max-width: 1241px){
     .botao-orcamento{
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 }
 
