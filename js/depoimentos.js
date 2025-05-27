@@ -37,10 +37,28 @@ const depoimentos = [
         imagem: "public/img/paladino.jpg"
     },
     {
+        nome: "Alvaro Pasinato",
+        cargo: "Paladino Tênis Clube",
+        texto: "Muito bom atendimento , produtos e valores compativeis com o mercado",
+        imagem: "public/img/paladino.jpg"
+    },
+    {
         nome: "Gabriel Costa",
         cargo: "Atena Tênis",
         texto: "Muito bom, atendimento ótimo com respostas rápidas, boa variedade de produtos e qualidade ótima. Sempre recorremos à Sfing na maioria de nossos torneios e eventos de tênis, e sempre foram atenciosos e atenderam nossas expectativas e a dos tenistas. Recomendo!",
         imagem: "public/img/atenatenis.jpg"
+    },
+    {
+        nome: "Gustavo Endres",
+        cargo: "APAV Vôlei Canoas",
+        texto: "O atendimento foi muito ágil, todos gostaram do produto e a entrega foi no dia combinado. Eu já recomendo para outras pessoas/empresas.",
+        imagem: "public/img/apavvolei.jpeg"
+    },
+    {
+        nome: "Nathali Quintana",
+        cargo: "Confraria do Vôlei",
+        texto: "As premiações dos torneios do time, faço sempre com a Sfing, empresa que tem um excelente portfólio de produtos, com atendimento ágil e com muita dedicação e atenção. Só tenho a agradecer, pela paciência e flexibilidade e excelência no atendimento.",
+        imagem: "public/img/confrariadovolei.jpg"
     }
 ];
 

@@ -114,7 +114,7 @@ a{
 
 .cabecalho__menu__logo {
     padding: 2rem;
-    width: 190px;
+    width: 220px;
     transition: all 0.3s ease;
 }
 
@@ -130,7 +130,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 8rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 5rem 1rem;
@@ -151,7 +151,6 @@ a{
 .titulo-sfing span {
     color: var(--cor-terciaria);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    display: block;
 }
 
 .texto-inicial-main {
@@ -205,6 +204,7 @@ a{
 .container-imagem {
     border-radius: var(--radius);
     overflow: hidden;
+    padding-left: 4rem;
 }
 
 .img-main {
@@ -827,6 +827,7 @@ a{
 }
 
 .filter-group h3 {
+    font-family: var(--font-textos);
     color: var(--cor-terciaria);
     border-bottom: 2px solid var(--cor-terciaria);
     padding-bottom: 10px;
@@ -1009,7 +1010,7 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color: #c17f45;
-    padding: 2.5rem;
+    padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -1109,7 +1110,7 @@ a{
 }
 
 @media (max-width: 768px) {
-    .sobre-paragrafo {
+    /* .sobre-paragrafo {
         padding: 1rem;
     }
     
@@ -1119,17 +1120,17 @@ a{
     
     .texto-sobrenos {
         font-size: 1rem;
-    }
+    } */
 }
 
 @media (max-width: 576px) {
     .sobre-paragrafo {
-        padding: 0.5rem;
+        padding: 1rem;
     }
-    
+    /*
     .sobre-container {
         padding: 1.5rem;
-    }
+    } */
 }
 
 /* Animação de fade-in para os elementos */
@@ -1185,8 +1186,8 @@ a{
 
 .subtitulo-contatos {
     text-align: center;
+    font-family: var(--font-textos);
     color: var(--cor-principal);
-    font-family: var(--font-primaria);
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -1252,7 +1253,7 @@ a{
 
 .contato h2 {
     color: var(--cor-principal);
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--font-textos);
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0.5rem 0;
@@ -1281,9 +1282,9 @@ a{
 
 .contato a {
     color: var(--cor-principal);
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
+    font-family: var(--font-textos);
     font-size: 1.1rem;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
@@ -1787,6 +1788,13 @@ footer a:active{
     }
 }
 
+@media(max-width: 540px){
+    .img-sobre{
+        width: 300px;
+        height: auto;
+    }
+}
+
 @media(max-width: 492px){
     .texto-inicial{
         padding:  2rem 5rem;
@@ -1862,14 +1870,14 @@ footer a:active{
     }
 }
 
-@media(max-width: 344px){
-
-    .titulo-sec{
-        font-size: 35px;
+@media(max-width: 375px){
+    .img-sobre{
+        width: 270px;
+        height: auto;
     }
 }
 
-@media(max-width: 331px){
+@media(max-width: 364px){
 
     .cabecalho__menu__botao{
         font-size: 17px;
@@ -1879,6 +1887,16 @@ footer a:active{
         font-size: 15px;
     }
 
+}
+
+@media(max-width: 344px){
+
+    .titulo-sec{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 331px){
     .direitos{
         font-size: 12px;
     }
