@@ -59,6 +59,18 @@ const depoimentos = [
         cargo: "Confraria do Vôlei",
         texto: "As premiações dos torneios do time, faço sempre com a Sfing, empresa que tem um excelente portfólio de produtos, com atendimento ágil e com muita dedicação e atenção. Só tenho a agradecer, pela paciência e flexibilidade e excelência no atendimento.",
         imagem: "public/img/confrariadovolei.jpg"
+    },
+    {
+        nome: "Paulo Sergio Rocha Souza",
+        cargo: "Copa Cidade de Gravataí",
+        texto: "Nós, da Copa Cidade de Gravataí — torneio de vôlei que chega à sua 4ª edição em 2025 — escolhemos a SFING TROFÉUS para produzir todas as nossas premiações. E não é por acaso: atendimento de excelência, qualidade impecável, preço justo e um acabamento perfeito, sempre entregues com pontualidade. Por isso, quando se trata de troféus, a nossa escolha é certa: SFING TROFÉUS!",
+        imagem: "public/img/copacidadedegravatai.jpg"
+    },
+    {
+        nome: "João Vitor Gudolle",
+        cargo: "",
+        texto: "Parabéns pelo excelente trabalho, tivemos a experiencia aqui na cidade de itaqui RS, a  qualidade, o capricho nos detalhes e o profissionalismo de vocês fazem toda a diferença. Os troféus e medalhas entregues mostram não só beleza, mas também respeito por cada conquista que representam. É gratificante contar com uma empresa tão comprometida, que entende o valor simbólico de cada premiação. Que continuem sendo referência em excelência e criatividade no que fazem. Abraços JV e kellen.",
+        imagem: "public/img/iconpadrao.png"
     }
 ];
 
