@@ -144,9 +144,11 @@ a{
 
 .titulo-sfing {
     color: var(--cor-principal);
-    font-family: var(--font-textos);
-    font-size: 3.5rem;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-size: 4.5rem;
     line-height: 1.2;
+    padding-bottom: 1rem;
 }
 .titulo-sfing span {
     color: var(--cor-terciaria);
@@ -211,7 +213,7 @@ a{
     width: 100%;
     height: auto;
     display: block;
-    
+    border-radius: 20px;
 }
 
 .container-sec {
@@ -492,13 +494,11 @@ a{
     transform: translateY(0);
 }
 
-/* Adicione para garantir que linhas com texto longo quebrem corretamente */
 .descricao-produto strong {
     display: inline-block;
     font-weight: bold;
 }
 
-/* Para garantir que a lista de esportes quebre corretamente */
 .descricao-produto br {
     display: block;
     content: "";
@@ -507,11 +507,11 @@ a{
 
 .linha-separadora{
     display: block;
-    width: 70%; /* Ajuste conforme necessário */
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 1rem;
     border: none;
-    height: 2px; /* Espessura da linha */
+    height: 2.5px;
     background-color: var(--cor-principal);
 }
 
@@ -586,7 +586,7 @@ a{
     height: 80%;
     max-width: 100%;
     object-fit: contain;
-    border: none;
+    border: var(--cor-principal) 3px solid;
     border-radius: 50px;
 }
 

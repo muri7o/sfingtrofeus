@@ -1,34 +1,16 @@
 // Dados dos depoimentos
 const depoimentos = [
     {
-        nome: "Rubia Capretti",
-        cargo: "",
-        texto: "Sempre fui muito bem atendida.  Desde a captação a entrega. Não exito em indicar a empresa.",
-        imagem: "public/img/iconpadrao.png"
-    },
-    {
-        nome: "Renato Neves",
-        cargo: "TRI SPORTS",
-        texto: "A experiência com a Sfing Troféus foi EXCELENTE. Já fiz premiações de 7 eventos diferentes com a empresa e em todas as vezes fui prontamente atendido, recebi várias dicas legais para a premiação, os troféus e medalhas foram entregues antes do tempo estimado e com uma qualidade altíssima. Indico muito essa empresa para outros lugares e hoje é a número 1 pra mim quando penso em solicitar premiações. Parabéns pelo trabalho e que sigamos nessa parceria muito legal que construímos.",
-        imagem: "public/img/trisports.jpg"
-    },
-    {
-        nome: "Dioneia",
-        cargo: "Fênix Torneios",
-        texto: "Passando aqui para falar que mais ou menos a 1 ano venho trabalhando com a Sfing através de meus torneios e desde então fiquei fixa com essa empresa. Os designers dos troféus e medalhas são impecáveis, além disso os preços são bem em conta e um excelente atendimento desde a encomenda até a entrega. Só tenho a agradecer pela ótima atenção que recebo.",
-        imagem: "public/img/fenixtorneios.jpg"
+        nome: "Gustavo Endres",
+        cargo: "APAV Vôlei Canoas",
+        texto: "O atendimento foi muito ágil, todos gostaram do produto e a entrega foi no dia combinado. Eu já recomendo para outras pessoas/empresas.",
+        imagem: "public/img/apavvolei.jpeg"
     },
     {
         nome: "Marco",
         cargo: "Integração Cruzaltense",
         texto: "Desde 2024, quando o Integração Cruzaltense realizou seu primeiro evento esportivo, começamos a trilhar um caminho cheio de desafios, conquistas e, principalmente, boas parcerias, e foi exatamente nessa trajetória que conhecemos a Sfing. Na busca por uma empresa de confiança no ramo de premiações, encontramos na Sfing muito mais que um fornecedor: encontramos uma equipe parceira, que nos atendeu com atenção, agilidade e excelência desde o primeiro contato. A cada novo torneio, a Sfing sempre esteve ao nosso lado, sempre pronta para esclarecer dúvidas, sugerir as melhores opções e garantir que cada troféu refletisse a essência do nosso grupo e das nossas competições. É uma empresa acessível, comprometida e que realmente entende a importância dos detalhes em cada entrega. Agradecemos imensamente por essa parceria de confiança e recomendamos de olhos fechados a Sfing para quem busca qualidade e dedicação no mundo das premiações esportivas.",
         imagem: "public/img/integracaocruzaltense.jpg"
-    },
-    {
-        nome: "João Pedro Martins",
-        cargo: "",
-        texto: "Tudo ótimo, produto e atendimento 100%",
-        imagem: "public/img/iconpadrao.png"
     },
     {
         nome: "Mateus",
@@ -49,10 +31,28 @@ const depoimentos = [
         imagem: "public/img/atenatenis.jpg"
     },
     {
-        nome: "Gustavo Endres",
-        cargo: "APAV Vôlei Canoas",
-        texto: "O atendimento foi muito ágil, todos gostaram do produto e a entrega foi no dia combinado. Eu já recomendo para outras pessoas/empresas.",
-        imagem: "public/img/apavvolei.jpeg"
+        nome: "Dioneia",
+        cargo: "Fênix Torneios",
+        texto: "Passando aqui para falar que mais ou menos a 1 ano venho trabalhando com a Sfing através de meus torneios e desde então fiquei fixa com essa empresa. Os designers dos troféus e medalhas são impecáveis, além disso os preços são bem em conta e um excelente atendimento desde a encomenda até a entrega. Só tenho a agradecer pela ótima atenção que recebo.",
+        imagem: "public/img/fenixtorneios.jpg"
+    },
+    {
+        nome: "Rubia Capretti",
+        cargo: "",
+        texto: "Sempre fui muito bem atendida.  Desde a captação a entrega. Não exito em indicar a empresa.",
+        imagem: "public/img/iconpadrao.png"
+    },
+    {
+        nome: "Renato Neves",
+        cargo: "TRI SPORTS",
+        texto: "A experiência com a Sfing Troféus foi EXCELENTE. Já fiz premiações de 7 eventos diferentes com a empresa e em todas as vezes fui prontamente atendido, recebi várias dicas legais para a premiação, os troféus e medalhas foram entregues antes do tempo estimado e com uma qualidade altíssima. Indico muito essa empresa para outros lugares e hoje é a número 1 pra mim quando penso em solicitar premiações. Parabéns pelo trabalho e que sigamos nessa parceria muito legal que construímos.",
+        imagem: "public/img/trisports.jpg"
+    },
+    {
+        nome: "João Pedro Martins",
+        cargo: "",
+        texto: "Tudo ótimo, produto e atendimento 100%",
+        imagem: "public/img/iconpadrao.png"
     },
     {
         nome: "Nathali Quintana",
