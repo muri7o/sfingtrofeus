@@ -1658,8 +1658,9 @@ footer a:active{
     }
 
     .container-imagem {
-        max-width: 100%;
+        max-width: 65%;
         margin: 0 auto;
+        padding-left: 0;
     }
 
     .linha-separadora-depoimentos{
