@@ -114,7 +114,7 @@ a{
 
 .cabecalho__menu__logo {
     padding: 2rem;
-    width: 220px;
+    width: 240px;
     transition: all 0.3s ease;
 }
 
@@ -144,9 +144,9 @@ a{
 
 .titulo-sfing {
     color: var(--cor-principal);
-    font-family: "Charm", cursive;
-    font-weight: 700;
-    font-size: 4.5rem;
+    font-family: "Romanesco", cursive;
+    font-weight: 400;
+    font-size: 4.55rem;
     line-height: 1.2;
     padding-bottom: 1rem;
 }
@@ -327,7 +327,7 @@ a{
 .titulo-sec{
     font-family: var(--font-textos);
     color: var(--cor-principal);
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 2.4rem;
     padding-bottom: 1rem;
 }
@@ -519,7 +519,7 @@ a{
     text-align: center;
     font-family: var(--font-textos);
     color: var(--cor-principal);
-    font-size: 50px;
+    font-size: 40px;
 
 }
 
@@ -616,7 +616,7 @@ a{
     text-align: center;
     font-family: var(--font-textos);
     color: var(--cor-principal);
-    font-size: 50px;
+    font-size: 40px;
     padding-bottom: 0.5rem;
 }
 
